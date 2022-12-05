@@ -1,4 +1,4 @@
-﻿var PLUGIN_VAR_NAME = 'g';
+var PLUGIN_VAR_NAME = 'g';
 var FOOTNOTES_VAR_NAME = 'fn';
 var ADAPTIVE_VIEW_VAR_NAME = 'view';
 var SCALE_VAR_NAME = 'sc';
@@ -104,9 +104,6 @@ var toolBarOnly = true;
             if (!QQ && !UC) appendOutOfDateNotification();
         }
 
-        if (CHROME_5_LOCAL && !$('body').attr('pluginDetected')) {
-            window.location = 'resources/chrome/chrome.html';
-        }
 
         if (FIREFOX && BROWSER_VERSION >= 68 && document.location.href.indexOf('file://') >= 0) { //detecting firefox and local
             window.location = 'resources/chrome/firefox.html';
